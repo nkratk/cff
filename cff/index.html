@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta name=viewport content="width=device-width, initial-scale=1">
+      <title>CFF</title>
+      <link rel="stylesheet" href="/styles.css"/>
+      <script src="/common/config/dcafeconfig.js"></script>
+      <script src="/vendor.js"></script>
+      <script>
+          var importLibFiles = [
+              {fileURL:"core/2.0/datacafe.min.css",fromCDN: true},
+              {fileURL:"core/2.0/font.min.css",fromCDN: true},
+              {fileURL:"core/2.0/datacafeui.min.js",fromCDN: true}
+          ];
+          function loadFile(item) {
+              dcafeConfig.load(item.fileURL, item.fromCDN);
+          }
+          importLibFiles.forEach(loadFile);
+      </script>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.css"/>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/nvd3/1.8.1/nv.d3.min.js"></script>
+      <script src="https://rawgit.com/krispo/angular-nvd3/v1.0.4/dist/angular-nvd3.js"></script>
+      <script src="/bundle.js"></script>
+  </head>
+  <body ng-app='cff-app'>
+    CFF UI
+    <hr>
+    <div style='display: flex'>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="3.2" wow-score="7.8" include-index-indicator="true"></kpi-card>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="3.2" wow-score="7.8" include-index-indicator="true"></kpi-card>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="8.2" wow-score="3.8" include-index-indicator="true"></kpi-card>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="3.2" wow-score="7.8" include-index-indicator="false"></kpi-card>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="3.2" wow-score="7.8" include-index-indicator="false"></kpi-card>
+      <kpi-card title="CFF Score" score="8.72" yoy-score="9.2" wow-score="7.8" include-index-indicator="false"></kpi-card>
+    </div>
+    <div>
+      <overview name="Region Name" rating="48 out of 85" message="Any other market level overview data can come here"></overview>
+      <overview name="Market Name" rating="48 out of 85" message="Any other market level overview data can come here"></overview>
+      <overview name="Division Name" rating="48 out of 85" message="Any other market level overview data can come here"></overview>
+    </div>
+    <div ng-controller="testCtrl as vm">
+      <nvd3 options="vm.discreteBarChartOptions" data="vm.discreteBarChartData" config="{deepWatchDataDepth: 0}"></nvd3>
+      <hr>
+      <nvd3 options="vm.horizontalBarChartOptions" data="vm.horizontalBarChartData" config="{deepWatchDataDepth: 0}"></nvd3>
+      <hr>
+      <nvd3 options="vm.stackAreaChartOptions" data="vm.stackAreaChartData" config="{deepWatchDataDepth: 0}"></nvd3>
+    </div>
+  </body>
+</html>

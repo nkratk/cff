@@ -1,0 +1,28 @@
+@import "_variables";
+@import "_mixins";
+
+// IMPORTANT: No CSS should be placed outside the following 3 blocks
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Large viewport CSS (Desktop)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+/*code goes here*/
+
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Medium viewport CSS (Tablet)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media screen and (max-width: $screen-md) {
+
+  .inner-container {
+    @include border-radius(10px);
+  }
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Small viewport CSS (Mobile)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media screen and (max-width: $screen-sm-md) {
+
+	/*code goes here*/
+
+}

@@ -1,0 +1,19 @@
+.performance-indicator {
+  display: flex;
+
+  .icon {
+    padding-right: 5px;
+  }
+
+  .red {
+    color: red;
+  }
+
+  .green {
+    color: green;
+  }
+  
+  .yellow {
+    color: yellow;
+  }
+}

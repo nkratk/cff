@@ -1,0 +1,11 @@
+<div class="kpi-card">
+  <div class="title">{{title}}</div>
+  <div class="score">{{score}}</div>
+  <div class="performance-indicator-wrapper">
+    <performance-indicator value='{{yoyScore}}' unit='%' label='YoY' icon-classes='["glyphicon-download", "glyphicon-upload"]'></performance-indicator>
+    <performance-indicator value='{{wowScore}}' unit='%' label='WoW' icon-classes='["glyphicon-minus-sign","glyphicon-plus-sign"]'></performance-indicator>
+  </div>
+  <div ng-if="includeIndexIndicator == 'true'">
+    Index Widget comes here...
+  </div>
+</div>

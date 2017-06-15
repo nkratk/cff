@@ -1,0 +1,24 @@
+.kpi-card {
+  min-width: 100px;
+  min-height: 100px;
+  border: 1px black solid;
+  padding: 5px;
+  text-align: center;
+
+  .title {
+    color: blue;
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .score {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  
+  .performance-indicator-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 5px;
+  }
+}

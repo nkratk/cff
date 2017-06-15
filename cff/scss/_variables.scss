@@ -1,0 +1,129 @@
+
+// Media queries breakpoints
+// --------------------------------------------------
+
+// Small screen / Mobile
+$screen-sm:                  320px;
+
+// Small to Medium screen / Big Mobile
+$screen-sm-md:                  640px;
+
+// Medium screen / Tablet
+$screen-md:                  768px;
+
+
+
+
+/** fonts vars starts here **/
+
+$font-size-base:          16px;
+// ---------------------------------------
+// These are the only font-sizes you should use in your styling
+// The PSDs should not have any font-sizes that are outside of this range.
+// If they do, then use the closest font-size listed here.
+
+$font-8:            ceil($font-size-base * 0.5);    //8px
+$font-9:            ceil($font-size-base * 0.5625); //9px
+$font-10:           ceil($font-size-base * 0.625);  //10px
+$font-11:           ceil($font-size-base * 0.6875); //11px
+$font-12:           ceil($font-size-base * 0.75);   //12px
+$font-13:           floor($font-size-base * 0.815); //13px
+$font-14:           ceil($font-size-base * 0.875);  //14px
+$font-15:           ceil($font-size-base * 0.9375); //15px
+$font-16:           $font-size-base;                //16px
+$font-17:           ceil($font-size-base * 1.0625); //17px
+$font-18:           ceil($font-size-base * 1.125);  //18px
+$font-19:           ceil($font-size-base * 1.1875); //19px
+$font-20:           ceil($font-size-base * 1.25);   //20px
+$font-21:           ceil($font-size-base * 1.3125); //21px
+$font-22:           ceil($font-size-base * 1.375);  //22px
+$font-23:           ceil($font-size-base * 1.4375); //23px
+$font-24:           ceil($font-size-base * 1.5);    //24px
+$font-25:           ceil($font-size-base * 1.5625); //25px
+$font-26:           ceil($font-size-base * 1.625);  //26px
+$font-28:           ceil($font-size-base * 1.75);   //28px
+$font-30:           ceil($font-size-base * 1.875);  //30px
+$font-32:           ceil($font-size-base * 2);      //32px
+$font-33:           ceil($font-size-base * 2.0625); //33px
+$font-34:           ceil($font-size-base * 2.125);  //34px
+$font-36:           ceil($font-size-base * 2.25);   //36px
+$font-38:           ceil($font-size-base * 2.375);  //38px
+$font-40:           ceil($font-size-base * 2.5);    //40px
+$font-42:           ceil($font-size-base * 2.625);  //42px
+$font-44:           ceil($font-size-base * 2.75);   //44px;
+$font-45:           ceil($font-size-base * 2.8125); //45px;
+$font-47:           ceil($font-size-base * 2.937);  //47px
+$font-48:           ceil($font-size-base * 3);      //48px
+$font-50:           ceil($font-size-base * 3.125);  //50px
+$font-52:           ceil($font-size-base * 3.2);    //52px
+$font-55:           ceil($font-size-base * 3.4375); //55px
+$font-56:           ceil($font-size-base * 3.5);    //56px
+$font-58:           ceil($font-size-base * 3.625);  //58px
+$font-60:           ceil($font-size-base * 3.75);   //60px
+$font-62:           ceil($font-size-base * 3.875);  //62px
+$font-65:           ceil($font-size-base * 4.0625); //65px
+$font-68:           ceil($font-size-base * 4.25);   //68px
+$font-70:           ceil($font-size-base * 4.375);  //70px
+$font-72:           ceil($font-size-base * 4.5);    //72px
+$font-74:           ceil($font-size-base * 4.625);    //74px
+$font-80:           ceil($font-size-base * 5);      //80px
+$font-82:           ceil($font-size-base * 5.125);  //82px
+$font-92:           ceil($font-size-base * 5.75);   //92px
+$font-100:          ceil($font-size-base * 6.25);   //100px
+$font-112:          ceil($font-size-base * 7);    //120px
+$font-120:          ceil($font-size-base * 7.5);    //120px
+$font-128:          ceil($font-size-base * 8);    //120px
+$font-130:          ceil($font-size-base * 8.125);  //130px
+$font-140:          ceil($font-size-base * 8.75);   //140px
+$font-160:          ceil($font-size-base * 10);     //160px
+$font-180:          ceil($font-size-base * 11.25);  //180px
+$font-212:          ceil($font-size-base * 13.25);  //212px
+$font-230:          ceil($font-size-base * 14.375); //230px
+
+
+
+/****************************************************************
+*    Variables for fonts to be used from 17th April, 2015 onwards
+****************************************************************/
+$font-regular: 'roboto_rgregular';
+$font-regular-italic: 'roboto_regular_italic';
+$font-thin: 'roboto_thin';
+$font-thin-italic: 'roboto_thin_italic';
+$font-light: 'roboto_light';
+$font-light-italic: 'roboto_light_italic';
+$font-bold: 'roboto_rgbold';
+$font-bold-italic: 'roboto_rgbold_italic';
+$font-semi-bold: 'roboto_semibold';
+$font-semi-bold-italic: 'roboto_semibold_italic';
+$font-extra-bold: 'roboto_extrabold';
+$font-extra-bold-italic: 'roboto_rgbold_italic';
+$font-black: 'roboto_black';
+$font-extra-black-italic: 'roboto_black_italic';
+
+
+/** fonts vars ends here **/
+
+$global-color : green;
+
+
+$btn-default-color : red;
+
+/*Global Variables*/
+
+//colors
+//Following four colors to be used, other variables using same color values are depricated
+
+
+$grey-63:                       #636363;
+$grey-d7:                       #d7d7d7;
+$grey-c2:                       #c2c2c2;
+
+
+$white:                         #fff;
+$black_60:                      rgba(0,0,0,0.6);
+$black:                         #000;
+//close button variables override
+$close-color:                   #fff;
+$close-font-weight:             normal;
+//** Modal backdrop background color
+$modal-backdrop-bg:           #fff;

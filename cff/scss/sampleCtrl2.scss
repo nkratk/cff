@@ -1,0 +1,27 @@
+@import "_variables";
+@import "_mixins";
+
+// IMPORTANT: No CSS should be placed outside the following 3 blocks
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Large viewport CSS (Desktop)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+.sample-ctrl-1 {
+  color: $global-color;
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Medium viewport CSS (Tablet)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media screen and (max-width: $screen-md) {
+
+	/*code goes here*/
+
+}
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+// Small viewport CSS (Mobile)
+// - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+@media screen and (max-width: $screen-sm-md) {
+
+	/*code goes here*/
+
+}
